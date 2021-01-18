@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flex Panel_2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css"> -->
+    <link rel="stylesheet" href="1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel">
+        <h1>Challenge #day6</h1>
+      </div>
+      <div class="panel">
+        <h1>Improve Your Skill</h1>
+      </div>
+      <div class="panel">
+        <h1>One day one thing</h1>
+      </div>
+      <div class="panel">
+        <h1>Your future dependency your self</h1>
+      </div>
+      <div class="panel">
+        <h1>#Javascipt #Html #Css</h1>
+      </div>
+    </div>
+  </body>
+  <script>
+	  const panels = document.querySelectorAll('.panel')
+
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    })
+}
+ 
+  </script>
+</html>
